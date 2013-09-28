@@ -10,11 +10,13 @@
     "devDependencies": {
         "atropa-jsformatter": ">=0.1.2",
         "atropa-jslint": ">=0.1.2",
+        "atropa-server": "git+https://github.com/matthewkastor/atropa-server.git#master",
         "browserify": ">=2.29.1",
         "jasmine-node": ">=1.11.0",
         "jsdoc-toolkit": "git+https://github.com/matthewkastor/node-jsdoc-toolkit.git#fix-tests"
     },
     "scripts": {
+        "start": "node server.js",
         "test": "jasmine-node specs/",
         "buildBrowserModule": "node dev/browserify.js",
         "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/",
