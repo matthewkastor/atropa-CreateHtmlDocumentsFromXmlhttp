@@ -1,6 +1,6 @@
 {
     "name": "atropa-CreateHtmlDocumentsFromXmlhttp",
-    "version": "2013.09.27-2334",
+    "version": "2013.09.27-2431",
     "description": "Creates HTML DOM Documents from an XMLHttpRequest objects response text.",
     "main": "./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
     "directories": {
@@ -43,8 +43,8 @@
         }
     ],
     "dependencies": {
-        "atropa-header": "*",
-        "atropa-Requester": "*",
-        "atropa-HTMLParser": "*"
+        "atropa-header": "git+https://github.com/matthewkastor/atropa-header.git#master",
+        "atropa-Requester": "git+https://github.com/matthewkastor/atropa-Requester.git#master",
+        "atropa-HTMLParser": "git+https://github.com/matthewkastor/atropa-HTMLParser.git#master"
     }
 }
