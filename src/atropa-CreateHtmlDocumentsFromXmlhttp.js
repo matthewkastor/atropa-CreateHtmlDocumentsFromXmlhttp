@@ -6,7 +6,23 @@
  * @namespace Container for all Glorious classes, functions, etc.
  */
 var atropa = require('atropa-header');
+/**
+ * Required module, the docs for it are in the <code>
+ *  atropa-Requester/docs</code> directory where this module 
+ *  is located.
+ * @see <a href="../../../node_modules/atropa-Requester/docs/jsdoc/index.html">
+ * ../../../node_modules/atropa-Requester/docs/jsdoc/index.html</a>,
+ *  unless you installed this dependency manually.
+ */
 atropa.Requester = require('atropa-Requester').Requester;
+/**
+ * Required module, the docs for it are in the <code>
+ *  atropa-HTMLParser/docs</code> directory where this module 
+ *  is located.
+ * @see <a href="../../../node_modules/atropa-HTMLParser/docs/jsdoc/index.html">
+ * ../../../node_modules/atropa-HTMLParser/docs/jsdoc/index.html</a>,
+ *  unless you installed this dependency manually.
+ */
 atropa.HTMLParser = require('atropa-HTMLParser').HTMLParser;
 /// <reference path="../../docs/vsdoc/OpenLayersAll.js"/>
 /*jslint

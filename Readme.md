@@ -41,9 +41,7 @@ Tests can be run from the root of this package with `npm test`. They require
  `npm install` to get the `devDependencies`.
 
 To run the browser tests open `browser/atropa-CreateHtmlDocumentsFromXmlhttp_tests.html` in your
- favorite web browser using the provided server. Start the server by running
- `npm start` from the root of this package, then open your web browser to
- `http://localhost:9999/browser/` and find the test pages.
+ favorite web browser.
 
 To edit the tests for both the browser and Node, edit the jasmine test files in
  `browser/tests`. For tests specific to Node edit the files in the `specs`
