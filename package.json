@@ -16,7 +16,7 @@
         "atropa-server": "git+https://github.com/matthewkastor/atropa-server.git#master"
     },
     "scripts": {
-        "start" : "node server.js",
+        "start": "node server.js",
         "test": "jasmine-node specs/",
         "buildBrowserModule": "node dev/browserify.js",
         "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/",
