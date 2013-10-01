@@ -23,7 +23,8 @@
         "lint": "atropa-jslint ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
         "srcFormat": "atropa-jsformatter ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
         "prestart": "node dev/browserify.js",
-        "pretest": "node dev/browserify.js"
+        "pretest": "node dev/browserify.js",
+        "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s src/"
     },
     "homepage": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/",
     "bugs": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/issues",
