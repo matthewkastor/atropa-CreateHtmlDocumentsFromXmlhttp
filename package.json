@@ -19,12 +19,12 @@
     "start": "node server.js",
     "test": "jasmine-node specs/",
     "buildBrowserModule": "node dev/browserify.js",
-    "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/ node_modules/atropa-header/src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/",
+    "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s node_modules/atropa-header/src/ src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/",
     "lint": "atropa-jslint ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
     "srcFormat": "atropa-jsformatter ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
     "prestart": "node dev/browserify.js",
     "pretest": "node dev/browserify.js",
-    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s src/ node_modules/atropa-header/src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/"
+    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s node_modules/atropa-header/src/ src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/"
   },
   "homepage": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/",
   "bugs": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/issues",
