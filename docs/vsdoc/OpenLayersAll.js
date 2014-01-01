@@ -27,9 +27,6 @@
     window.atropa = {
         /// <summary></summary>
         /// <field name="data" type="">Container for gobal data related to the classes and functions.</field>
-        /// <field name="ArgsInfo" type="">Required module, the docs for it are in the &lt;code&gt;
-        ///  atropa-ArgsInfo/docs&lt;/code&gt; directory where this module 
-        ///  is located.</field>
         /// <returns type="atropa"/>
                 
         supportCheck: function(className, errorMessage) {
