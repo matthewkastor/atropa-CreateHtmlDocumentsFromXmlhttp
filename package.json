@@ -1,55 +1,55 @@
 {
-    "name": "atropa-CreateHtmlDocumentsFromXmlhttp",
-    "version": "2013.10.13",
-    "description": "Creates HTML DOM Documents from an XMLHttpRequest objects response text.",
-    "main": "./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
-    "directories": {
-        "lib": "src",
-        "doc": "docs"
-    },
-    "devDependencies": {
-        "atropa-jsformatter": ">=0.1.2",
-        "atropa-jslint": ">=0.1.2",
-        "browserify": ">=2.29.1",
-        "jasmine-node": ">=1.11.0",
-        "jsdoc-toolkit": "git+https://github.com/matthewkastor/node-jsdoc-toolkit.git#fix-tests",
-        "atropa-server": "git+https://github.com/matthewkastor/atropa-server.git#master"
-    },
-    "scripts": {
-        "start": "node server.js",
-        "test": "jasmine-node specs/",
-        "buildBrowserModule": "node dev/browserify.js",
-        "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/ node_modules/atropa-header/src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/",
-        "lint": "atropa-jslint ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
-        "srcFormat": "atropa-jsformatter ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
-        "prestart": "node dev/browserify.js",
-        "pretest": "node dev/browserify.js",
-        "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s src/ node_modules/atropa-header/src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/"
-    },
-    "homepage": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/",
-    "bugs": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/issues",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp.git"
-    },
-    "keywords": [
-        "atropa-CreateHtmlDocumentsFromXmlhttp",
-        "atropa"
-    ],
-    "author": {
-        "name": "Matthew Kastor",
-        "email": "matthewkastor@gmail.com",
-        "url": "https://plus.google.com/100898583798552211130"
-    },
-    "licenses": [
-        {
-            "type": "gpl-3.0",
-            "url": "http://www.gnu.org/licenses/gpl-3.0-standalone.html"
-        }
-    ],
-    "dependencies": {
-        "atropa-header": "git+https://github.com/matthewkastor/atropa-header.git#master",
-        "atropa-Requester": "git+https://github.com/matthewkastor/atropa-Requester.git#master",
-        "atropa-HTMLParser": "git+https://github.com/matthewkastor/atropa-HTMLParser.git#master"
+  "name": "atropa-CreateHtmlDocumentsFromXmlhttp",
+  "version": "2013.10.14",
+  "description": "Creates HTML DOM Documents from an XMLHttpRequest objects response text.",
+  "main": "./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
+  "directories": {
+    "lib": "src",
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "atropa-jsformatter": ">=0.1.2",
+    "atropa-jslint": ">=0.1.2",
+    "browserify": ">=2.29.1",
+    "jasmine-node": ">=1.11.0",
+    "jsdoc-toolkit": "git+https://github.com/matthewkastor/node-jsdoc-toolkit.git#fix-tests",
+    "atropa-server": "git+https://github.com/matthewkastor/atropa-server.git#master"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "jasmine-node specs/",
+    "buildBrowserModule": "node dev/browserify.js",
+    "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/ node_modules/atropa-header/src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/",
+    "lint": "atropa-jslint ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
+    "srcFormat": "atropa-jsformatter ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
+    "prestart": "node dev/browserify.js",
+    "pretest": "node dev/browserify.js",
+    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s src/ node_modules/atropa-header/src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/"
+  },
+  "homepage": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/",
+  "bugs": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp.git"
+  },
+  "keywords": [
+    "atropa-CreateHtmlDocumentsFromXmlhttp",
+    "atropa"
+  ],
+  "author": {
+    "name": "Matthew Kastor",
+    "email": "matthewkastor@gmail.com",
+    "url": "https://plus.google.com/100898583798552211130"
+  },
+  "licenses": [
+    {
+      "type": "gpl-3.0",
+      "url": "http://www.gnu.org/licenses/gpl-3.0-standalone.html"
     }
+  ],
+  "dependencies": {
+    "atropa-header": "git+https://github.com/matthewkastor/atropa-header.git#master",
+    "atropa-Requester": "git+https://github.com/matthewkastor/atropa-Requester.git#master",
+    "atropa-HTMLParser": "git+https://github.com/matthewkastor/atropa-HTMLParser.git#master"
+  }
 }
