@@ -133,7 +133,7 @@ atropa.CreateHtmlDocumentsFromXmlhttp = function CreateHtmlDocumentsFromXmlhttp(
         method, url, messageBody, callback
     ) {
         var cb;
-        /**
+        /*
          * Internal callback function to process data from XMLHttpRequest
          * @author <a href="mailto:matthewkastor@gmail.com">
          *  Matthew Christopher Kastor-Inare III </a><br />
