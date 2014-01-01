@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - atropa</title>
+		<title>JsDoc Reference - atropa.HTMLParser</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -210,25 +210,27 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace atropa
+				Class atropa.HTMLParser
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
 			<p class="description">
+				<br />Version
+					20120909.<br />
 				
 				
 			
-				Container for all Glorious classes, functions, etc.
+				Creates a new HTML Parser
 				
 				
-					<br /><i>Defined in: </i> &lt;src/atropa-CreateHtmlDocumentsFromXmlhttp.js&gt;.
+					<br /><i>Defined in: </i> &lt;node_modules/atropa-HTMLParser/src/atropa-HTMLParser.js&gt;.
 				
 			</p>
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class atropa.">
-				<caption>Namespace Summary</caption>
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class atropa.HTMLParser.">
+				<caption>Class Summary</caption>
 				<thead>
 					<tr>
 						<th scope="col">Constructor Attributes</th>
@@ -240,9 +242,10 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/atropa.html#constructor">atropa</a></b>
+								<b><a href="../symbols/atropa.HTMLParser.html#constructor">atropa.HTMLParser</a></b>()
 							</div>
-							<div class="description">Container for all Glorious classes, functions, etc.</div>
+							<div class="description">Creates a new HTML Parser<br />
+Carry out DOM operations without loading content to the active document.</div>
 						</td>
 					</tr>
 				</tbody>
@@ -253,7 +256,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class atropa.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class atropa.HTMLParser.">
 					<caption>Field Summary</caption>
 					<thead>
 						<tr>
@@ -264,14 +267,12 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								atropa.<b><a href="../symbols/atropa.html#.ArgsInfo">ArgsInfo</a></b>
+								<b><a href="../symbols/atropa.HTMLParser.html#doc">doc</a></b>
 								</div>
-								<div class="description">Required module, the docs for it are in the <code>
- atropa-ArgsInfo/docs</code> directory where this module 
- is located.</div>
+								<div class="description">Holds the created HTML DOM Document.</div>
 							</td>
 						</tr>
 					
@@ -286,7 +287,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class atropa.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class atropa.HTMLParser.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -297,21 +298,20 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">atropa.<b><a href="../symbols/atropa.html#.requires">requires</a></b>(className, requirementFn, errorMessage)
+								<div class="fixedFont"><b><a href="../symbols/atropa.HTMLParser.html#loadString">loadString</a></b>(htmlstring)
 								</div>
-								<div class="description">Pushes a requirement check into atropa.data.requirements.</div>
+								<div class="description">Creates a new HTML DOM Document and loads the given string into it.</div>
 							</td>
 						</tr>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">atropa.<b><a href="../symbols/atropa.html#.supportCheck">supportCheck</a></b>(className, errorMessage)
+								<div class="fixedFont"><b><a href="../symbols/atropa.HTMLParser.html#newDocument">newDocument</a></b>()
 								</div>
-								<div class="description">Checks whether this class has been marked as unsupported and throws an 
- error if it has.</div>
+								<div class="description">Creates a blank HTML DOM Document.</div>
 							</td>
 						</tr>
 					
@@ -328,16 +328,19 @@ ul.inheritsList
 			
 			<div class="details"><a name="constructor"> </a>
 				<div class="sectionTitle">
-					Namespace Detail
+					Class Detail
 				</div>
 				
 				<div class="fixedFont">
-						<b>atropa</b>
+						<b>atropa.HTMLParser</b>()
 				</div>
 				
 				<div class="description">
-					Container for all Glorious classes, functions, etc.
-					<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com"> Matthew Christopher Kastor-Inare III </a><br /> ☭ Hial Atropa!! ☭.
+					Creates a new HTML Parser<br />
+Carry out DOM operations without loading content to the active document.
+					<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
+ Matthew Christopher Kastor-Inare III </a><br />
+ ☭ Hial Atropa!! ☭.
 				</div>
 				
 				
@@ -348,7 +351,29 @@ ul.inheritsList
 					
 					
 					
+						<dl class="detailList">
+						<dt class="heading">Returns:</dt>
+						
+								<dd><span class="light fixedFont">{HTML DOM Document}</span> Returns a blank HTML Document for you to load
+ data into</dd>
+						
+						</dl>
 					
+					
+						<dl class="detailList">
+						<dt class="heading">Requires:</dt>
+						
+							<dd><a href="../symbols/atropa.data.html">atropa.data</a></dd>
+						
+						</dl>
+					
+					
+						<dl class="detailList">
+						<dt class="heading">See:</dt>
+						
+							<dd><a href="../../../AtropaToolboxTests.html?spec=atropa.HTMLParser">tests</a></dd>
+						
+						</dl>
 					
 
 			</div>
@@ -360,20 +385,15 @@ ul.inheritsList
 					Field Detail
 				</div>
 				
-					<a name=".ArgsInfo"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="doc"> </a>
+					<div class="fixedFont">
 					
-					
-					<span class="light">atropa.</span><b>ArgsInfo</b>
+					<span class="light">{HTML DOM Document}</span>
+					<b>doc</b>
 					
 					</div>
 					<div class="description">
-						Required module, the docs for it are in the <code>
- atropa-ArgsInfo/docs</code> directory where this module 
- is located.
-						
-							<br />
-							<i>Defined in: </i> &lt;node_modules/atropa-Requester/src/atropa-Requester.js&gt;.
+						Holds the created HTML DOM Document.
 						
 						
 					</div>
@@ -382,15 +402,6 @@ ul.inheritsList
 
 						
 						
-						
-							<dl class="detailList">
-							<dt class="heading">See:</dt>
-							
-							<dd><a href="../../../node_modules/atropa-ArgsInfo/docs/jsdoc/index.html">
-../../../node_modules/atropa-ArgsInfo/docs/jsdoc/index.html</a>,
- unless you installed this dependency manually.</dd>
-							
-							</dl>
 						
 						
 
@@ -404,22 +415,15 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".requires"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="loadString"> </a>
+					<div class="fixedFont">
 					
-					
-					<span class="light">atropa.</span><b>requires</b>(className, requirementFn, errorMessage)
+					<span class="light">{HTML DOM Document}</span>
+					<b>loadString</b>(htmlstring)
 					
 					</div>
 					<div class="description">
-						Pushes a requirement check into atropa.data.requirements. The test
- tests whether the class is supported in this environment. Sets
- atropa.data[className]'s support to unsupported and error to errorMessage
- if the requirementFn returns false. The requirement checks will all be run
- after the library has loaded.
-						
-							<br />
-							<i>Defined in: </i> &lt;node_modules/atropa-header/src/atropa-header.js&gt;.
+						Creates a new HTML DOM Document and loads the given string into it.
 						
 						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
  Matthew Christopher Kastor-Inare III </a><br />
@@ -433,51 +437,39 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{String}</span> <b>className</b>
+									<span class="light fixedFont">{String}</span> <b>htmlstring</b>
 									
 								</dt>
-								<dd>The name of the class.</dd>
-							
-								<dt>
-									<span class="light fixedFont">{Function}</span> <b>requirementFn</b>
-									
-								</dt>
-								<dd>A function to test whether or not the class
- is supported in this environment. If supported, returns true otherwise
- return false.</dd>
-							
-								<dt>
-									<span class="light fixedFont">{String}</span> <b>errorMessage</b>
-									
-								</dt>
-								<dd>The error message to use when this class or its
- methods are called in unsupported environments. Defaults to:
- 'The atropa.' + className + ' class is unsupported in this environment.';</dd>
+								<dd>a string of HTML data</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{HTML DOM Document}</span> Resets the doc property of this instance,
+loading a new document with the string given.</dd>
+							
+							</dl>
 						
 						
 						
 
 					<hr />
 				
-					<a name=".supportCheck"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="newDocument"> </a>
+					<div class="fixedFont">
 					
-					
-					<span class="light">atropa.</span><b>supportCheck</b>(className, errorMessage)
+					<span class="light">{HTML DOM Document}</span>
+					<b>newDocument</b>()
 					
 					</div>
 					<div class="description">
-						Checks whether this class has been marked as unsupported and throws an 
- error if it has.
-						
-							<br />
-							<i>Defined in: </i> &lt;node_modules/atropa-header/src/atropa-header.js&gt;.
+						Creates a blank HTML DOM Document.
 						
 						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
  Matthew Christopher Kastor-Inare III </a><br />
@@ -487,27 +479,17 @@ ul.inheritsList
 					
 					
 						
+						
+						
+						
+						
 							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
+							<dt class="heading">Returns:</dt>
 							
-								<dt>
-									<span class="light fixedFont">{String}</span> <b>className</b>
-									
-								</dt>
-								<dd>The name of the class.</dd>
-							
-								<dt>
-									<span class="light fixedFont">{String}</span> <b>errorMessage</b>
-									
-								</dt>
-								<dd>Optional. A custom error message. Defaults to
- atropa.data[className].error</dd>
+								<dd><span class="light fixedFont">{HTML DOM Document}</span> Resets the doc property of this instance
+ and, returns a blank HTML Document for you to load data into.</dd>
 							
 							</dl>
-						
-						
-						
-						
 						
 						
 						

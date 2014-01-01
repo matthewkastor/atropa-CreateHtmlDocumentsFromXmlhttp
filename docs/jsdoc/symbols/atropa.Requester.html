@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - atropa</title>
+		<title>JsDoc Reference - atropa.Requester</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -210,25 +210,27 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace atropa
+				Class atropa.Requester
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
 			<p class="description">
+				<br />Version
+					20130311.<br />
 				
 				
 			
-				Container for all Glorious classes, functions, etc.
+				This represents an XMLHttpRequest.
 				
 				
-					<br /><i>Defined in: </i> &lt;src/atropa-CreateHtmlDocumentsFromXmlhttp.js&gt;.
+					<br /><i>Defined in: </i> &lt;node_modules/atropa-Requester/src/atropa-Requester.js&gt;.
 				
 			</p>
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class atropa.">
-				<caption>Namespace Summary</caption>
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class atropa.Requester.">
+				<caption>Class Summary</caption>
 				<thead>
 					<tr>
 						<th scope="col">Constructor Attributes</th>
@@ -240,9 +242,9 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/atropa.html#constructor">atropa</a></b>
+								<b><a href="../symbols/atropa.Requester.html#constructor">atropa.Requester</a></b>()
 							</div>
-							<div class="description">Container for all Glorious classes, functions, etc.</div>
+							<div class="description">This represents an XMLHttpRequest.</div>
 						</td>
 					</tr>
 				</tbody>
@@ -253,7 +255,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class atropa.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class atropa.Requester.">
 					<caption>Field Summary</caption>
 					<thead>
 						<tr>
@@ -264,14 +266,23 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								atropa.<b><a href="../symbols/atropa.html#.ArgsInfo">ArgsInfo</a></b>
+								<b><a href="../symbols/atropa.Requester.html#requestHeaders">requestHeaders</a></b>
 								</div>
-								<div class="description">Required module, the docs for it are in the <code>
- atropa-ArgsInfo/docs</code> directory where this module 
- is located.</div>
+								<div class="description">Object whose properties and values are header names and values
+ respectively.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/atropa.Requester.html#timeout">timeout</a></b>
+								</div>
+								<div class="description">Set the timeout value for the request in milliseconds.</div>
 							</td>
 						</tr>
 					
@@ -286,7 +297,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class atropa.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class atropa.Requester.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -297,21 +308,11 @@ ul.inheritsList
 					<tbody>
 					
 						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">atropa.<b><a href="../symbols/atropa.html#.requires">requires</a></b>(className, requirementFn, errorMessage)
+								<div class="fixedFont"><b><a href="../symbols/atropa.Requester.html#makeRequest">makeRequest</a></b>(method, url, messageBody, callback)
 								</div>
-								<div class="description">Pushes a requirement check into atropa.data.requirements.</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">atropa.<b><a href="../symbols/atropa.html#.supportCheck">supportCheck</a></b>(className, errorMessage)
-								</div>
-								<div class="description">Checks whether this class has been marked as unsupported and throws an 
- error if it has.</div>
+								<div class="description">Makes an AJAX request.</div>
 							</td>
 						</tr>
 					
@@ -328,27 +329,74 @@ ul.inheritsList
 			
 			<div class="details"><a name="constructor"> </a>
 				<div class="sectionTitle">
-					Namespace Detail
+					Class Detail
 				</div>
 				
 				<div class="fixedFont">
-						<b>atropa</b>
+						<b>atropa.Requester</b>()
 				</div>
 				
 				<div class="description">
-					Container for all Glorious classes, functions, etc.
-					<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com"> Matthew Christopher Kastor-Inare III </a><br /> ☭ Hial Atropa!! ☭.
+					This represents an XMLHttpRequest.
+					<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
+ Matthew Christopher Kastor-Inare III </a><br />
+ ☭ Hial Atropa!! ☭.
 				</div>
 				
 				
 				
+				<pre class="code">var requester, formData;
+
+requester = new atropa.Requester();
+requester.timeout = 10000; // requests will abort after 10 seconds.
+requester.requestHeaders = {
+    "aHeader" : "headerValue",
+    "anotherHeader" : "andValue"
+};
+
+function showRequestResults(status, request) {
+    console.log("Status: ' + status);
+    console.dir(request); // console dir may or may not
+                       // be supported in your environment.
+}
+
+formData = new FormData();
+formData.append('aFormFieldName', 'formFieldData');
+formData.append('anotherFormFieldName', 'andData');
+
+requester.makeRequest(
+    "post", "http://example.com", formData, showRequestResults);</pre>
+				
+				
+				
 				
 					
 					
 					
 					
 					
+						<dl class="detailList">
+						<dt class="heading">Returns:</dt>
+						
+								<dd><span class="light fixedFont">{Requester}</span> Returns a requester object.</dd>
+						
+						</dl>
 					
+					
+						<dl class="detailList">
+						<dt class="heading">Requires:</dt>
+						
+							<dd>atropa.ArgsInfo#checkArgTypes</dd>
+						
+						</dl>
+					
+					
+						<dl class="detailList">
+						<dt class="heading">See:</dt>
+						
+							<dd><a href="../../../AtropaToolboxTests.html?spec=atropa.Requester">tests</a></dd>
+						
+						</dl>
 					
 
 			</div>
@@ -360,20 +408,16 @@ ul.inheritsList
 					Field Detail
 				</div>
 				
-					<a name=".ArgsInfo"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="requestHeaders"> </a>
+					<div class="fixedFont">
 					
-					
-					<span class="light">atropa.</span><b>ArgsInfo</b>
+					<span class="light">{Request Headers Object}</span>
+					<b>requestHeaders</b>
 					
 					</div>
 					<div class="description">
-						Required module, the docs for it are in the <code>
- atropa-ArgsInfo/docs</code> directory where this module 
- is located.
-						
-							<br />
-							<i>Defined in: </i> &lt;node_modules/atropa-Requester/src/atropa-Requester.js&gt;.
+						Object whose properties and values are header names and values
+ respectively.
 						
 						
 					</div>
@@ -383,14 +427,28 @@ ul.inheritsList
 						
 						
 						
-							<dl class="detailList">
-							<dt class="heading">See:</dt>
-							
-							<dd><a href="../../../node_modules/atropa-ArgsInfo/docs/jsdoc/index.html">
-../../../node_modules/atropa-ArgsInfo/docs/jsdoc/index.html</a>,
- unless you installed this dependency manually.</dd>
-							
-							</dl>
+						
+
+					<hr />
+				
+					<a name="timeout"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Number}</span>
+					<b>timeout</b>
+					
+					</div>
+					<div class="description">
+						Set the timeout value for the request in milliseconds. The request will
+ abort after this amount of time has passed.
+						
+						
+					</div>
+					
+					
+
+						
+						
 						
 						
 
@@ -404,22 +462,15 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".requires"> </a>
-					<div class="fixedFont">&lt;static&gt; 
+					<a name="makeRequest"> </a>
+					<div class="fixedFont">
 					
 					
-					<span class="light">atropa.</span><b>requires</b>(className, requirementFn, errorMessage)
+					<b>makeRequest</b>(method, url, messageBody, callback)
 					
 					</div>
 					<div class="description">
-						Pushes a requirement check into atropa.data.requirements. The test
- tests whether the class is supported in this environment. Sets
- atropa.data[className]'s support to unsupported and error to errorMessage
- if the requirementFn returns false. The requirement checks will all be run
- after the library has loaded.
-						
-							<br />
-							<i>Defined in: </i> &lt;node_modules/atropa-header/src/atropa-header.js&gt;.
+						Makes an AJAX request.
 						
 						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
  Matthew Christopher Kastor-Inare III </a><br />
@@ -433,80 +484,46 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{String}</span> <b>className</b>
+									<span class="light fixedFont">{String}</span> <b>method</b>
 									
 								</dt>
-								<dd>The name of the class.</dd>
+								<dd>The HTTP method to be used for this request.</dd>
 							
 								<dt>
-									<span class="light fixedFont">{Function}</span> <b>requirementFn</b>
+									<span class="light fixedFont">{String}</span> <b>url</b>
 									
 								</dt>
-								<dd>A function to test whether or not the class
- is supported in this environment. If supported, returns true otherwise
- return false.</dd>
+								<dd>The URL to send the request to.</dd>
 							
 								<dt>
-									<span class="light fixedFont">{String}</span> <b>errorMessage</b>
+									<span class="light fixedFont">{String}</span> <b>messageBody</b>
 									
 								</dt>
-								<dd>The error message to use when this class or its
- methods are called in unsupported environments. Defaults to:
- 'The atropa.' + className + ' class is unsupported in this environment.';</dd>
+								<dd>The body of the request.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function to execute
+ when readyState is 4. The callback is supplied with two arguments. The
+ first argument is a boolean indicating whether or not the http status
+ was 200. The second argument is the request object.</dd>
 							
 							</dl>
 						
 						
 						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".supportCheck"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					
-					<span class="light">atropa.</span><b>supportCheck</b>(className, errorMessage)
-					
-					</div>
-					<div class="description">
-						Checks whether this class has been marked as unsupported and throws an 
- error if it has.
-						
-							<br />
-							<i>Defined in: </i> &lt;node_modules/atropa-header/src/atropa-header.js&gt;.
-						
-						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
- Matthew Christopher Kastor-Inare III </a><br />
- ☭ Hial Atropa!! ☭.
-					</div>
-					
-					
-					
 						
 							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
+							<dt class="heading">Throws:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{String}</span> <b>className</b>
-									
+									 <b></b>
 								</dt>
-								<dd>The name of the class.</dd>
-							
-								<dt>
-									<span class="light fixedFont">{String}</span> <b>errorMessage</b>
-									
-								</dt>
-								<dd>Optional. A custom error message. Defaults to
- atropa.data[className].error</dd>
+								<dd>atropa.Requester.makeRequest unexpected argument type</dd>
 							
 							</dl>
-						
-						
-						
 						
 						
 						
