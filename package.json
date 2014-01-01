@@ -1,6 +1,6 @@
 {
   "name": "atropa-CreateHtmlDocumentsFromXmlhttp",
-  "version": "2013.10.16",
+  "version": "2013.10.17",
   "description": "Creates HTML DOM Documents from an XMLHttpRequest objects response text.",
   "main": "./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
   "directories": {
