@@ -44,7 +44,6 @@ atropa.requires(
  * @requires atropa.Requester
  * @requires atropa.HTMLParser
  * @requires atropa.data
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.CreateHtmlDocumentsFromXmlhttp">tests</a>
  * @example
  * var method, url, callback, docs;
  * 
