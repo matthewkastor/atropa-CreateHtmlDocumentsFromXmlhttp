@@ -1,6 +1,6 @@
 {
   "name": "atropa-CreateHtmlDocumentsFromXmlhttp",
-  "version": "2014.1.2",
+  "version": "2014.2.1",
   "description": "Creates HTML DOM Documents from an XMLHttpRequest objects response text.",
   "main": "./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
   "directories": {
@@ -24,7 +24,7 @@
     "srcFormat": "atropa-jsformatter ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js ./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
     "prestart": "node dev/browserify.js",
     "pretest": "node dev/browserify.js",
-    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s node_modules/atropa-header/src/ src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/"
+    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./node_modules/jsdoc-toolkit/templates/vsdoc/ -r -s node_modules/atropa-header/src/ src/ node_modules/atropa-Requester/src/ node_modules/atropa-HTMLParser/src/"
   },
   "homepage": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/",
   "bugs": "https://github.com/matthewkastor/atropa-CreateHtmlDocumentsFromXmlhttp/issues",
