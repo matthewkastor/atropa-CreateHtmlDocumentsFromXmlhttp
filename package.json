@@ -1,6 +1,6 @@
 {
   "name": "atropa-CreateHtmlDocumentsFromXmlhttp",
-  "version": "2014.2.1",
+  "version": "2022.11.16",
   "description": "Creates HTML DOM Documents from an XMLHttpRequest objects response text.",
   "main": "./src/atropa-CreateHtmlDocumentsFromXmlhttp.js",
   "directories": {
@@ -10,7 +10,7 @@
   "devDependencies": {
     "atropa-jsformatter": ">=0.1.2",
     "atropa-jslint": ">=0.1.2",
-    "browserify": ">=2.29.1",
+    "browserify": ">=17.0.0",
     "jasmine-node": ">=1.11.0",
     "jsdoc-toolkit": "git+https://github.com/matthewkastor/node-jsdoc-toolkit.git#fix-tests",
     "atropa-server": "git+https://github.com/matthewkastor/atropa-server.git#master"
