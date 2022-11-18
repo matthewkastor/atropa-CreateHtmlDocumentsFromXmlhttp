@@ -1,4 +1,7 @@
 /// <reference path="../docs/vsdoc/OpenLayersAll.js"/>
+/*jslint
+    node: true
+*/
 var atropa = require('atropa-header');
 atropa.Requester = require('atropa-Requester').Requester;
 atropa.HTMLParser = require('atropa-HTMLParser').HTMLParser;

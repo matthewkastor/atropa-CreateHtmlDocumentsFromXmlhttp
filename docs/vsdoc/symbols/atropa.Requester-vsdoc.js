@@ -5,12 +5,13 @@
     window.atropa = window.atropa || {};
 
     window.atropa.Requester = function(){
-        /// <summary></summary>
-        /// <field name="requestHeaders" type="Request Headers Object">Object whose properties and values are header names and values
+        /// <summary>This represents an XMLHttpRequest.</summary>
+        /// <field name="requestHeaders" type="Object">Object whose properties and values are header names and values
         ///  respectively.</field>
+        requestHeaders : new Object(), 
         /// <field name="timeout" type="Number">Set the timeout value for the request in milliseconds. The request will
         ///  abort after this amount of time has passed.</field>
-        /// <returns type="atropa.Requester"/>
+        timeout : new Number(), 
     };
 
     var $x = window.atropa.Requester;

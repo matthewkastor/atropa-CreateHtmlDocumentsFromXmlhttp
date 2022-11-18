@@ -5,9 +5,10 @@
     window.atropa = window.atropa || {};
 
     window.atropa.HTMLParser = function(){
-        /// <summary></summary>
+        /// <summary>Creates a new HTML Parser<br />
+        /// /// Carry out DOM operations without loading content to the active document.</summary>
         /// <field name="doc" type="HTML DOM Document">Holds the created HTML DOM Document.</field>
-        /// <returns type="atropa.HTMLParser"/>
+        doc : new HTML DOM Document(), 
     };
 
     var $x = window.atropa.HTMLParser;

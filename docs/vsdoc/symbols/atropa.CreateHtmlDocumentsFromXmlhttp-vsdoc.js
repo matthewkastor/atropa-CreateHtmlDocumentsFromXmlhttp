@@ -5,9 +5,11 @@
     window.atropa = window.atropa || {};
 
     window.atropa.CreateHtmlDocumentsFromXmlhttp = function(){
-        /// <summary></summary>
+        /// <summary>Creates HTML DOM Documents from an XMLHttpRequest object.
+        /// ///  This was tested on Firefox, it doesn&amp;apos;t work on google chrome.
+        /// ///  Your mileage may vary.</summary>
         /// <field name="documentQueue" type="Array">Queue of documents created by this instance.</field>
-        /// <returns type="atropa.CreateHtmlDocumentsFromXmlhttp"/>
+        documentQueue : new Array(), 
     };
 
     var $x = window.atropa.CreateHtmlDocumentsFromXmlhttp;
